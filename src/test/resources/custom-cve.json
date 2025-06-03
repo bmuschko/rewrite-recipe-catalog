@@ -9,7 +9,7 @@
       "fixedVersion": "2.6",
       "lastAffectedVersion": null,
       "severity": "MODERATE",
-      "cwes": ["CWE-200"]
+      "cwes": "CWE-200"
     }
   ]
 }
