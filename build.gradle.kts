@@ -22,10 +22,13 @@ dependencies {
     implementation(platform("org.openrewrite.recipe:rewrite-recipe-bom:latest.release"))
 
     implementation("org.openrewrite:rewrite-java")
+    implementation("org.openrewrite:rewrite-gradle")
     implementation("org.openrewrite.recipe:rewrite-java-dependencies")
+    implementation("org.openrewrite.recipe:rewrite-java-security:3.12.0-SNAPSHOT")
     implementation("org.openrewrite:rewrite-yaml")
     implementation("org.openrewrite.meta:rewrite-analysis")
     implementation("org.assertj:assertj-core:latest.release")
+    implementation("org.json:json:20250517")
     runtimeOnly("org.openrewrite:rewrite-java-17")
 
     // Refaster style recipes need the rewrite-templating annotation processor and dependency for generated recipes
@@ -40,6 +43,8 @@ dependencies {
 
     // The RewriteTest class needed for testing recipes
     testImplementation("org.openrewrite:rewrite-test")
+    testImplementation("org.openrewrite.gradle.tooling:model:latest.release")
+    testImplementation(gradleApi())
 
     // Need to have a slf4j binding to see any output enabled from the parser.
     runtimeOnly("ch.qos.logback:logback-classic:1.2.+")

@@ -7,7 +7,7 @@
       "groupArtifact": "commons-lang:commons-lang",
       "introducedVersion": "2.5",
       "fixedVersion": "2.6",
-      "lastAffectedVersion": null,
+      "lastAffectedVersion": "",
       "severity": "MODERATE",
       "cwes": "CWE-200"
     }
