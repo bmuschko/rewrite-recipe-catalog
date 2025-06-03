@@ -1,0 +1,15 @@
+{
+  "vulnerabilities": [
+    {
+      "cve": "CVE-9999-123",
+      "publishedAt": "2022-04-30T18:14:15Z",
+      "summary": "Fake Commons Lang Vulnerability",
+      "groupArtifact": "commons-lang:commons-lang",
+      "introducedVersion": "2.5",
+      "fixedVersion": "2.6",
+      "lastAffectedVersion": null,
+      "severity": "MODERATE",
+      "cwes": ["CWE-200"]
+    }
+  ]
+}
